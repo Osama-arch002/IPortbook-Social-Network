@@ -25,6 +25,7 @@ A custom, multi-threaded social network platform implemented completely from scr
 Build both target executables cleanly using the automated Makefile assembly layer:
 ```bash
 make
+```
 
 ### Execution
 1. Local Host Development Environment (Same PC)
