@@ -31,14 +31,22 @@ make
 
 #### 1. Local Host Development Environment (Same PC)
 Launch the central hub server to listen on an open local port:
+```bash
 ./server 8888
+```
 
 In a secondary terminal window, connect an autonomous user targeting the machine loopback address:
+```bash
 ./client 8888 127.0.0.1
+```
 
 #### 2. Cross-Laptop Production Network Deployment (Workstations)
 Determine your server host's active local interface address (via ifconfig or ip a). Launch the core server instance:
+```bash
 ./server 8888
+```
 
 On any independent laptop within the same network domain, spin up a client node referencing the server's real IP address string:
+```bash
 ./client 8888 <SERVER_REAL_IP>
+```
